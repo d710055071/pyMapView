@@ -15,7 +15,7 @@ class MainWindow(QMainWindow):
             构造函数
         """
         # 调用父类构造函数
-        super(QMainWindow,self).__init__(parent)
+        super(MainWindow,self).__init__(parent)
         # 定义界面对象
         self.ui = Ui_MainWindow()
         # 设置 界面
