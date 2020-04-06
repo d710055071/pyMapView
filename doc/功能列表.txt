@@ -1,3 +1,33 @@
 1.描画点
 2.描画线
 3.描画多边形
+4.支持插件(不会)
+
+
+.
+├── build_ui.py                            编译ui文件
+├── configs                                配置项 python里写json可直接用
+│   └── __init__.py
+├── core                                   核心模块
+│   ├── __init__.py
+│   └── Painter                            描画
+│       ├── __init__.py
+│       ├── PainterDef.py                  描画相关定义
+│       ├── Painter.py                     描画类
+│       └── PainterThread.py               描画线程类
+├── doc                                    文档相关
+│   └── 功能列表.txt
+├── LICENSE                                开源协议
+├── mapview                                主程序
+│   ├── __init__.py
+│   ├── MainWindow.py                      主窗口类
+│   └── ViewWindow.py                      中心窗口类
+├── plugins                                后续开发插件相关
+├── pyMapView.py                           程序入口
+├── README.md                              描述文件
+├── resources
+└── ui                                     窗口资源
+    ├── __init__.py
+    ├── MainWindow.ui                     主窗口资源
+    └── ui_MainWindow.py                  主窗口代码 自动生成
+
