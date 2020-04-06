@@ -31,7 +31,7 @@ def ui2py(src_path,tar_path):
         name,suffix = os.path.splitext(file_name)
         if suffix != '.ui':
             continue
-        out_py = file_path + "/" + name + ".py"
+        out_py = file_path + "/" + "ui_" + name + ".py"
         cmd = "python3 -m PyQt5.uic.pyuic %s -o %s"%(one_file,out_py)
         print(cmd)
         os.system(cmd)

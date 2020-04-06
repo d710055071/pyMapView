@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 
 from PyQt5.QtWidgets import QMainWindow
-
 # 导入ui类
-from ui.MainWindow import Ui_MainWindow
-
+from ui.ui_MainWindow import Ui_MainWindow
+# 导入ViewWindow 类
+from .ViewWindow import ViewWindow
 
 class MainWindow(QMainWindow):
     """
@@ -20,3 +20,7 @@ class MainWindow(QMainWindow):
         self.ui = Ui_MainWindow()
         # 设置 界面
         self.ui.setupUi(self)
+        # 定义view 窗口
+        self.view_window = ViewWindow()
+
+        self.setCentralWidget(self.view_window)
