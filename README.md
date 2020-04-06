@@ -1,11 +1,11 @@
 # pyMapView
 基于pyqt开发一个多功能描画工具,点、线、几何图形等元素
 
-1.安装PyQt5
+# 1.安装PyQt5
     sudo apt-get install python3-pyqt5
-2.安装qt-designer
+# 2.安装qt-designer
     sudo apt-get install qt5-default qttools5-dev-tools
-3.UI文件编译
+# 3.UI文件编译
     手动编译:
         命令行设置编译命令的快捷方式
         ～/.bashrc 文件中添加如下:
