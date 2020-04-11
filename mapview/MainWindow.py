@@ -22,5 +22,15 @@ class MainWindow(QMainWindow):
         self.ui.setupUi(self)
         # 定义view 窗口
         self.view_window = ViewWindow()
-
+        # 设置窗口标题
+        self.setWindowTitle("MapView")
+        # 设置中心窗口
         self.setCentralWidget(self.view_window)
+
+        # 连接信号与槽函数
+        self.connect_all()
+    def connect_all(self):
+        # 单击信号 连接 open_file 函数
+        self.ui.open_file_action.triggered.connect(self.open_file)
+    def open_file(self):
+        pass
