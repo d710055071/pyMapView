@@ -2,9 +2,9 @@
 
 from PyQt5.QtWidgets import QMainWindow
 # 导入ui类
-from ui.ui_MainWindow import Ui_MainWindow
+from ui import *
 # 导入ViewWindow 类
-from .ViewWindow import ViewWindow
+from .ViewWindow import *
 
 class MainWindow(QMainWindow):
     """
